@@ -57,23 +57,6 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'prabirshrestha/vim-lsp'
-hook_add = '''
-  let g:lsp_log_verbose = 1
-  let g:lsp_log_file = expand('~/.cache/tmp/vim-lsp.log')
-  let g:lsp_diagnostics_enabled = 0
-'''
-
-[[plugins]]
-repo = 'prabirshrestha/async.vim'
-
-[[plugins]]
-repo = 'prabirshrestha/asyncomplete.vim'
-
-[[plugins]]
-repo = 'prabirshrestha/asyncomplete-lsp.vim'
-
-[[plugins]]
 repo = 'vim-scripts/vim-auto-save'
 hook_add = '''
   let g:auto_save = 1
