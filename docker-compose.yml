@@ -1,0 +1,14 @@
+version: '2.3'
+services:
+  dev:
+    build:
+      context: .
+    image: cpp-dev
+    command: /bin/zsh
+    volumes:
+      - .:/root/cpp-dev
+      - ${SSH_AUTH_SOCK}:/ssh-agent
+    environment:
+    - SSH_AUTH_SOCK=/ssh-agent
+    shm_size: 8g
+    working_dir: /root/cpp-dev
