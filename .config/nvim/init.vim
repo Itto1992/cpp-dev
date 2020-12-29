@@ -200,3 +200,7 @@ endif
 
 " quickrun keymap
 nnoremap <leader>qr :QuickRun<CR>
+
+" Load templates
+" If the number of templates increases in the future, arrange them.
+autocmd BufNewFile ~/AtCoder/*.cpp :0r ~/.config/nvim/templates/atcoder.cpp
